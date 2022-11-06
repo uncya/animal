@@ -1,0 +1,335 @@
+/* ブレイクポイント
+９４６px
+８８０px
+７４０px
+５４０px
+４５６px
+３７５px */
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+            ブレイクポイント９４６px
+  ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media (max-width: 946px) {
+  .wrapper,
+  .link-wrapper,
+  .accessbox,
+  .faq-wrapper,
+  footer {
+    width: 100%;
+    padding: 0.4%;
+  }
+  .animal-pictures {
+    width: 100%;
+  }
+  header.wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  /* ーーーー ナビゲーションーーーーー*/
+
+  .nav-box {
+    display: none;
+  }
+
+  .modal {
+    width: 400px;
+  }
+
+  /* ーーーー MAPーーーーー*/
+  .map {
+    width: 100% !important;
+    height: auto;
+    margin: 0;
+  }
+  .map iframe {
+    width: 100%;
+  }
+
+  /* ーーーー ヘッダー、フッターーーーーー*/
+
+  header,
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  /* ーーーー ハンバーガーーーーー*/
+
+  .burger {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url("../images/burger.png");
+    background-size: 49px;
+    border-radius: 30%;
+    background-color: #f99f48;
+    padding: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px 20px 0 80px;
+    cursor: pointer;
+    /* バーガーを押下した後もバーガーを隠さない */
+    /* position: relative; */
+    position: fixed;
+    right: 0px;
+    top: 100px;
+    z-index: 999;
+  }
+  .burger p {
+    display: block;
+    margin-top: 42px;
+    text-align: center;
+    position: relative;
+   
+  }
+  .burger:hover {
+    background-color: #f1d927;
+    border-radius: 40px;
+  }
+
+  .burger.is-active {
+    background-color: #f3eded;
+    background-image: url("../images/close.png");
+    /* position:relative; */
+
+  }
+
+  .menu {
+    /* vh画面の高さ、vw幅一杯 */
+    width: 100vw;
+    height: 100vh;
+    color: rgb(250, 244, 244);
+    background-color: #f99f48;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 特定の位置に固定 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .menu a {
+    opacity: 1;
+  }
+  .menu a:hover {
+    color: #1bcef6;
+  }
+  .menu.is-active {
+    display: flex;
+    z-index: 800;
+  }
+  .menus {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 14px;
+  }
+
+  .click-head a {
+    color: #e6edef;
+    padding: 20px;
+  } /* ーーーー ハンバーガーここまでーーーーー*/
+
+  /* ーーーー医師の紹介ーーーーー*/
+
+  .doctor-profile {
+    margin-top: 10px;
+  }
+  .doctorimg {
+    margin: 0 auto;
+  }
+
+  /* ーーーー 診療案内,お知らせーーーーー*/
+
+  .link-wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+             ブレイクポイント８８０px
+ ＝＝＝＝＝＝＝＝＝＝＝ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media (max-width: 880px) {
+  /* ーーーー モダールーーーーー*/
+
+  .modal {
+    width: 350px;
+  }
+  #submit-btn {
+    padding: 14px 100px;
+  }
+
+  /* ーーーー メインイメージーーーー*/
+
+  .main {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .main-right {
+    width: 100%;
+    height: auto;
+  }
+  .main-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-right-mago {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .main-botan {
+    width: 100%;
+  }
+  /* ーーーー 診療案内ーーーーー*/
+  .link-left,
+  .link-right {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* ーーーー 地図、住所ーーーーー*/
+  .accessbox {
+    flex-wrap: wrap;
+  }
+  .business-hours {
+    margin-left: 0;
+  }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+             ブレイクポイント７４6px
+ ＝＝＝＝＝＝＝＝＝＝＝ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+@media (max-width: 746px) {
+  html {
+    font-size: 11px;
+  }
+
+  /* ーーーー ヘッダーーーーー*/
+  header .wrapper img {
+    width: 100%;
+    height: auto;
+  }
+  header img {
+    width: 100%;
+  }
+  /* ーーーー モーダルーーーー*/
+  .modal {
+    left: 26%;
+    width: 300px;
+  }
+  #submit-btn {
+    padding: 14px 60px;
+  }
+  #signup-form input,
+  #login-form input {
+    width: 240px;
+    padding: 9px 3px;
+  }
+
+  /* ーーーーメインイメージーーーー*/
+  .main-right h2 {
+    width: 100%;
+    position: absolute;
+    font-size: 2.3rem;
+  }
+
+  /* ーーーーコンセプトーーーー*/
+  .concept-box {
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+  }
+  .concept {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px auto;
+  }
+  .concept-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  /* ーーーー FAQ,よくある質問ーーーー*/
+  .faq-wrapper {
+    margin: 0 auto 50px auto;
+  }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+             ブレイクポイント５４０px
+ ＝＝＝＝＝＝＝＝＝＝＝ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media (max-width: 540px) {
+  .main-right h2 {
+    right: 40px;
+  }
+  .concept-text {
+    font-size: 1.6rem;
+  }
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+             ブレイクポイント４５６px
+ ＝＝＝＝＝＝＝＝＝＝＝ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media (max-width: 473px) {
+  html {
+    font-size: 7px;
+  }
+  header .weapper {
+    padding: 10px;
+  }
+  .main-right h2 {
+    right: 70px;
+    top: 100px;
+  }
+  .concept-text {
+    font-size: 1.4rem;
+  }
+  /* ーーーー モーダルーーーー*/
+  .modal {
+    left: 15%;
+  }
+  .concept {
+    width: 110px;
+    height: 110px;
+  }
+  .concept-text {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .burger {
+    width: 50px;
+    height: 50px;
+  }
+  footer img {
+    width: 100%;
+  }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+             ブレイクポイント３７５px
+ ＝＝＝＝＝＝＝＝＝＝＝ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+@media (max-width: 375px) {
+  .modal {
+    left: 13%;
+  }
+  .main-right h2 {
+    font-size: 2.4rem;
+    /* top:90px;
+    right:50px; */
+  }
+  .main-right img {
+    width: 100%;
+  }
+
+  .images img {
+    width: 100%;
+  }
+}

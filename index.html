@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="千葉県千葉市の動物病院。専門医療からペットホテル、トリミングまでお任せください。"
+    />
+
+    <title>鈴木どうぶつ病院</title>
+    <!-- ファビコン-->
+    <link
+      rel="shortcut icon"
+      href="./images/cat_mono.png"
+      type="image/x-icon"
+    />
+    <!-- リセットCSS -->
+    <link href=" https://unpkg.com/sanitize.css " rel=" stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/responsive-pet.css" />
+    <!--フォントAwesome-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <!-- Googleフォント-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=M+PLUS+1p:wght@300&family=New+Tegomin&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="./images/logoend.png" />
+      <h2><a class="phonenum" href="tel:0123-0000">TEL : 0123-0000</a></h2>
+    </header>
+    <div class="wrapper">
+      <!-- ここからハンバーガーメニュー -->
+     
+      <div class="burger"></div>
+      <div class="menu">
+        <div class="click-head">
+          <div class="menus signup-show"><a href="#">ご新規予約</a></div>
+          <div class="menus login-show"><a href="#">再診察のご予約</a></div>
+          <div class="menus"><a href="#guidance">診療案内</a></div>
+          <div class="menus"><a href="#hotel">ホテル</a></div>
+          <div class="menus"><a href="#access">アクセス</a></div>
+        </div>
+      </div>
+
+      <!-- ここまでハンバーガーメニュー-->
+    </div>
+
+    <div class="wrapper">
+      <!-- ナビゲーション-->
+      <div class="nav-box">
+        <div class="nav signup-show"><a href="#">ご新規予約</a></div>
+        <div class="nav login-show"><a href="#">再診察のご予約</a></div>
+        <div class="nav"><a href="#guidance">診療案内</a></div>
+        <div class="nav"><a href="#hotel">ホテル</a></div>
+        <div class="nav"><a href="#access">アクセス</a></div>
+      </div>
+
+      <!---ここからご新規予約＆再診のご予約のモーダル-->
+      <div class="signup-modal-wrapper" id="signup-modal">
+        <!-- ご新規予約用のモーダル-->
+        <div class="modal">
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+          <div id="signup-form">
+            <h2>ご新規予約</h2>
+            <form action="#">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="メールアドレス"
+              />
+              <input class="form-control" type="name" placeholder="お名前" />
+              <div id="submit-btn">予約登録</div>
+            </form>
+          </div>
+        </div>
+        <!--modalここまで -->
+      </div>
+      <!--signup-modal-wrapperここまで -->
+
+      <!-- 再診ご予約用のモーダル-->
+      <div class="login-modal-wrapper" id="login-modal">
+        <div class="modal">
+          <div class="close-modal">
+           <i class="fa fa-2x fa-times"></i>
+          </div>
+          <div id="login-form">
+            <h2>お客様番号でログイン</h2>
+            <form action="#">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="メールアドレス"
+              />
+              <input
+                class="form-control"
+                type="namber"
+                placeholder="お客様番号"
+              />
+              <div id="submit-btn">ログイン</div>
+            </form>
+          </div>
+        </div>
+        <!--modalここまで -->
+      </div>
+      <!--login-modal-wrapperここまで -->
+      <!----ここまで新規予約＆ログインのモーダル----->
+
+      <!-----------メインイメージ--------->
+      <div class="main">
+        <div class="main-right">
+          <img src="./images/pet.png" alt="" />
+          <h2>
+            かけがえのない大切な家族のために<br />
+            質の高い獣医医療を
+          </h2>
+        </div>
+
+        <div class="main-right-mago">
+          <div class="main-botan">
+            <p><a href="#">夜間診療</a></p>
+          </div>
+          <div class="main-botan">
+            <p><a href="#">セカンドピニオン</a></p>
+          </div>
+          <div class="main-botan" id="hotel">
+            <p><a href="#">ペットホテル</a></p>
+          </div>
+          <div class="main-botan">
+            <p><a href="#">トリミング</a></p>
+          </div>
+        </div>
+      </div>
+      <!--main -->
+
+      <!-----------コンセプト----------->
+      <div class="concept-box">
+        <div class="concept">
+          <h4 class="concept-text">質の高い<br />専門医療</h4>
+        </div>
+
+        <div class="concept">
+          <h4 class="concept-text">土日祝<br />夜間受付</h4>
+        </div>
+
+        <div class="concept">
+          <h4 class="concept-text">細やかな<br />サービス</h4>
+        </div>
+      </div>
+    </div>
+    <!-- ナビゲーション〜wrapperここまで-->
+
+    <div class="wrapper">
+      <!-----------医師の紹介----------->
+      <div class="doctor">
+        <div class="doctorimg">
+          <h2>医師の紹介</h2>
+          <img src="./images/24439706_s.jpg" />
+          <p>院長　鈴木　太郎</p>
+        </div>
+        <div class="doctor-profile">
+          <h4><span>資格</span></h4>
+          <p>獣医がん学会</p>
+          <p>心臓認定医</p>
+
+          <h4><span>研修</span></h4>
+          <p>消化器、整形外科</p>
+
+          <h4><span>得意分野</span></h4>
+          <p>外科・消化器</p>
+          <p></p>
+
+          <h4><span>経歴</span></h4>
+          <p>鈴木大学　獣医学科　卒業</p>
+          <p>鈴木総合動物医療センター勤務</p>
+        </div>
+      </div>
+      <!--doctor　end -->
+
+      <div class="link-wrapper">
+        <div class="link-left">
+          <h3 class="info" id="guidance"><a>診療案内</a></h3>
+          <!-- "signup-show"というclassをつけてください -->
+          <h3 class="info"><a>診療予約について</a></h3>
+          <h3 class="info"><a>各手術のご予約</a></h3>
+        </div>
+
+        <div class="link-right">
+          <h3><span>お知らせ</span></h3>
+          <p><span>2022.4/3</span>連休中の診療</p>
+          <p><span>2022.4/3</span>年末年始の診療</p>
+          <p><span>2022.4/3</span>里親募集！</p>
+          <p><span>2022.4/3</span>求人について</p>
+        </div>
+      </div>
+    </div>
+    <!-- 医師の紹介〜wrapperここまで-->
+
+    <!-----------FAQアコーディオン、よくある質問----------->
+    <div class="faq-wrapper">
+      <div class="container">
+        <div class="heading"><h2>よくあるご質問</h2></div>
+        <div class="faq">
+          <ul id="faq-list">
+            <li class="faq-list-item">
+              <h3 class="question">年末年始は営業していますか？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>1/1、1/2、1/3はお休みをいただいております。</p>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <h3 class="question">診療できる動物の制限はありますか？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>猫と犬になります。</p>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <h3 class="question">フードの購入、相談もできますか？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>
+                  可能です。（ロイヤルカナンフードマイスター在籍）お気軽にご相談ください。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--faq -->
+      </div>
+      <!--container -->
+    </div>
+    <!-- faq-wrapper -->
+
+    <!-----------円形の動物画像×３----------->
+
+    <div class="container">
+      <!-- <div class="fluid"></div>
+      <div class="fluid-mini"></div> -->
+    </div>
+    <div class="animal-pictures">
+      <div class="images img1"><img src="./images/cyatora.jpg" /></div>
+      <div class="images img2"><img src="./images/untanafter.png" /></div>
+      <div class="images img3"><img src="./images/inu-neko.jpg" /></div>
+    </div>
+
+    <!---------- Google MAP＆住所----------->
+    <div class="accessbox" id="access">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12966.991898658345!2d139.7454329!3d35.6585805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1661578280615!5m2!1sja!2sjp"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="access-right">
+        <div class="access">
+          <p>〒123-0000 千葉県千葉市XXX町</p>
+          <p><a class="phonenum" href="tel:0123-0000">TEL : 0123-0000</a></p>
+        </div>
+
+        <div class="business-hours">
+          <table>
+            <caption>
+              <strong>診療受付</strong>
+            </caption>
+            <thead>
+              <tr>
+                <th>診療時間</th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+                <th>土</th>
+                <th>日</th>
+              </tr>
+              <hr />
+            </thead>
+            <tbody>
+              <tr>
+                <th>10:00~14:00</th>
+                <td>○</td>
+                <td>○</td>
+                <td>○</td>
+                <td><span>休</span></td>
+                <td>○</td>
+                <td>○</td>
+                <td>○</td>
+              </tr>
+              <tr>
+                <th>16:00~19:00</th>
+                <td>○</td>
+                <td>○</td>
+                <td>○</td>
+                <td><span>休</span></td>
+                <td>○</td>
+                <td>○</td>
+                <td>○</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- open -->
+      </div>
+      <!-- accessright -->
+    </div>
+    <!-- accessbox -->
+
+    <footer>
+      <img src="./images/logoend.png" />
+      <h2><a class="phonenum" href="tel:0123-0000">TEL : 0123-0000</a></h2>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
